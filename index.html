@@ -1,11 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>titre</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini CV — Iheb Ben Salem</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <div class="card" role="main">
+      <aside>
+        <div class="photo">
+          <img src="m1.jpg" alt="Photo de profil" />
+        </div>
+
+        <h1 class="name">Iheb Ben Salem</h1>
+        <div class="role">Etudiant — Technologie d'informatique</div>
+
+        <div class="contact">
+          <div>📧 ihebbenselm01@gmail.com</div>
+          <div>📱 +216 52 011 961</div>
+          <div>📍 Tozeur, Tunisie</div>
+        </div>
+
+        <div class="skills-section">
+          <h2>Compétences</h2>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS / Bootstrap</li>
+            <li>Java</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="langues-section">
+          <h2>Langues</h2>
+          <ul class="skills">
+            <li>Arabe (natif)</li>
+            <li>Français</li>
+            <li>Anglais</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="right">
+        <div class="about-section">
+          <h2>À propos</h2>
+          <p>Étudiant en Technologie d'informatique à Tozeur. Passionné par le développement web et l'automatisation, j'aime construire des outils qui simplifient la vie des étudiants — par exemple le projet "Dabbaret Waqtek" pour organiser le temps de révision.</p>
+          <div class="buttons">
+            <a class="btn-download" href="#" id="downloadBtn">⬇️ Télécharger CV</a>
+            <a class="btn-contact" href="mailto:ihebbenselm01@gmail.com">✉️ Contacter</a>
+          </div>
+        </div>
+
+        <div class="exp-section">
+          <h2>Expérience & Projets</h2>
+          <div class="exp-item">
+            <b>Stagiaire — STB (Société Tunisienne de Banque)</b>
+            <p class="date">Jan 2025 — Présent</p>
+            <p>Travail sur des scripts d'automatisation et assistance dans des tâches de support technique.</p>
+          </div>
+          <div class="exp-item">
+            <b>Dabbaret Waqtek — Projet personnel</b>
+            <p class="date">Mai 2025</p>
+            <p>Plateforme web pour organiser les séances de révision des étudiants, avec planning et minuteurs.</p>
+          </div>
+        </div>
+
+        <div class="formation-section">
+          <h2>Formation</h2>
+          <div class="exp-item">
+            <b>Technologie d'informatique — ISET Tozeur</b>
+            <p class="date">2023 — Présent</p>
+            <p>Cours principaux : programmation Java, systèmes d'exploitation, réseaux, bases de données.</p>
+            <b>Management skills</b>
+            <p class="date">2025 — Présent</p>
+          </div>
+        </div>
+
+        <div class="interets-section">
+          <h2>Centres d'intérêt</h2>
+          <p>Lecture, football (Real Madrid), développement web, musique.</p>
+        </div>
+
+        <footer>
+          Dernière mise à jour : 16 octobre 2025 — construit avec ❤️
+        </footer>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      window.print();
+    });
+  </script>
 </body>
 </html>
